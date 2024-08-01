@@ -35,8 +35,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
 		"@types/bun": "latest",
-		"@types/json2csv": "^5.0.7",
-		"bun-plugin-dts": "^0.2.3"
+		"@types/json2csv": "^5.0.7"
 	},
 	"scripts": {
 		"ex0": "bun ./src/ex0.ts",
@@ -50,8 +49,5 @@
 	"dependencies": {
 		"@json2csv/node": "^7.0.6",
 		"json2csv": "^6.0.0-alpha.2"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
 	}
 }
