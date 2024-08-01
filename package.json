@@ -1,0 +1,58 @@
+{
+	"name": "@heiwa4126/test-json2csv",
+	"version": "1.0.0",
+	"main": "./dist/esm/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/esm/index.d.ts",
+	"type": "module",
+	"bin": {
+		"test-json2csv": "./dist/esm/cli.js"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"keywords": ["demo", "typescript", "bun", "helloworld"],
+	"author": "heiwa4126",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/heiwa4126/test-json2csv.git"
+	},
+	"bugs": {
+		"url": "https://github.com/heiwa4126/test-json2csv/issues"
+	},
+	"homepage": "https://github.com/heiwa4126/test-json2csv#readme",
+	"license": "MIT",
+	"description": "TypeScript package tutorial by bun",
+	"files": [
+		"package.json",
+		"README.md",
+		"LICENSE",
+		"dist/",
+		"!**/__tests__",
+		"!**/*.test.*",
+		"!**/*.js.map"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/bun": "latest",
+		"@types/json2csv": "^5.0.7",
+		"bun-plugin-dts": "^0.2.3"
+	},
+	"scripts": {
+		"ex0": "bun ./src/ex0.ts",
+		"ex1": "bun ./src/ex1.ts",
+		"ex2": "bun ./src/ex2.ts",
+		"format": "biome format --write .",
+		"lint": "biome lint .",
+		"check": "biome check --write .",
+		"build": "rm -rf ./dist && mkdir -p ./dist && bun ./build.ts",
+		"pack": "bun run format && bun run build && npm pack && mv *.tgz ../"
+	},
+	"dependencies": {
+		"@json2csv/node": "^7.0.6",
+		"json2csv": "^6.0.0-alpha.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
