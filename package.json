@@ -1,17 +1,11 @@
 {
 	"name": "@heiwa4126/test-json2csv",
 	"version": "1.0.0",
-	"main": "./dist/esm/index.js",
-	"module": "./dist/esm/index.js",
-	"types": "./dist/esm/index.d.ts",
 	"type": "module",
-	"bin": {
-		"test-json2csv": "./dist/esm/cli.js"
-	},
 	"engines": {
 		"node": ">=16"
 	},
-	"keywords": ["demo", "typescript", "bun", "helloworld"],
+	"keywords": ["demo", "typescript", "bun", "json2csv"],
 	"author": "heiwa4126",
 	"repository": {
 		"type": "git",
@@ -22,7 +16,7 @@
 	},
 	"homepage": "https://github.com/heiwa4126/test-json2csv#readme",
 	"license": "MIT",
-	"description": "TypeScript package tutorial by bun",
+	"description": "TypeScript package tutorial for json2csv",
 	"files": [
 		"package.json",
 		"README.md",
