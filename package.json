@@ -42,11 +42,10 @@
 		"ex0": "bun ./src/ex0.ts",
 		"ex1": "bun ./src/ex1.ts",
 		"ex2": "bun ./src/ex2.ts",
+		"ex3": "bun ./src/ex3.ts",
 		"format": "biome format --write .",
 		"lint": "biome lint .",
-		"check": "biome check --write .",
-		"build": "rm -rf ./dist && mkdir -p ./dist && bun ./build.ts",
-		"pack": "bun run format && bun run build && npm pack && mv *.tgz ../"
+		"check": "biome check --write ."
 	},
 	"dependencies": {
 		"@json2csv/node": "^7.0.6",

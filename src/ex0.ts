@@ -1,12 +1,6 @@
-import { Parser } from "json2csv";
 import { writeFile } from "node:fs/promises";
-import type { FileInfo } from "./types";
-
-const data: FileInfo[] = [
-	{ id: "1", lines: 10 },
-	{ id: "2", lines: 20 },
-	{ id: "3", lines: 30 },
-];
+import { Parser } from "json2csv";
+import { type FileInfo, data } from "./example-data";
 
 async function convertAndSaveToCSV(data: FileInfo[], outputPath: string) {
 	try {
